@@ -23,6 +23,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IArtClassRepository, ArtClassRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddControllers();
             services.AddDbContext<ArtMiraDbContext>(options => options.UseSqlite(_configuration.GetConnectionString("Default")));
             services.AddSwaggerGen(c =>

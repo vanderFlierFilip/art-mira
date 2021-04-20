@@ -9,5 +9,6 @@ namespace Core.Entities
         public string Description { get; set; }
         public string PictureUrl { get; set; }
         public string Schedule { get; set; }
+        public bool IsAvailableOnline { get; set; }
     }
 }

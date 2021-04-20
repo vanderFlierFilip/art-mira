@@ -2,9 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Core.Entities;
 using Core.Interfaces;
-using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -12,24 +10,25 @@ namespace API.Controllers
     [Route("api/art-classes")]
     public class ArtClassesController : ControllerBase
     {
-        private readonly IArtClassRepository _repo;
-        public ArtClassesController(IArtClassRepository repo)
+        private readonly IGenericRepository<ArtClass> _artclassesRepo;
+        public ArtClassesController(IGenericRepository<ArtClass> artclassesRepo)
         {
-            _repo = repo;
+            _artclassesRepo = artclassesRepo;
         }
 
         [HttpGet]
         public async Task<List<ArtClass>> GetArtClasses()
         {
-            var artClasses = await _repo.GetArtClassesAsync();
+            var artClasses = await _artclassesRepo.ListAllAsync();
 
             return (List<ArtClass>)artClasses;
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<ArtClass>> GetArtClass(int id)
         {
-            return await _repo.GetArtClassByIdAsync(id);
+            return await _artclassesRepo.GetByIdAsync(id);
         }
+
     }
 }
 
