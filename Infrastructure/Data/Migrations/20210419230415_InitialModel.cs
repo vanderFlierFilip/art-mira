@@ -12,7 +12,13 @@ namespace Infrastructure.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true)
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Info = table.Column<string>(type: "TEXT", nullable: false),
+                    Duration = table.Column<int>(type: "INTEGER", nullable: false),
+                    Price = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    PictureUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    Schedule = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Private Paint and Sip Party Package",
+    "Info": "Private Paint and Sip Party Package for 5 people.",
+    "Duration": 1,
+    "Price": 200,
+    "Description": "A professional artist provides step-by-step painting.Class participants improve their painting skills and enjoy a glass of wine.During a painting class, participants can create paintings while sipping beverages brought from home and chatting with friends.",
+    "PictureUrl": "images/classes/wine.jpg",
+    "Schedule": ""
+  },
+  {
+    "Name": "Private Paint and Sip Hot Cocoa or Juice",
+    "Info": "Private Paint Sip Hot Cocoa (or Juice) Class for Five Children",
+    "Duration": 1,
+    "Price": 200,
+    "Description": "Paint and Sip Hot Cocoa (or Juice) Class for Five Children Aged 4–15. A professional artist provides step-by-step painting. Class participants improve their painting skills and enjoy a Hot Cocoa (or Juice).",
+    "PictureUrl": "images/classes/kids.jpg",
+    "Schedule": ""
+  },
+  {
+    "Name": "In the Studio / 4 classes Monthly",
+    "Info": "Kids who attend 40 classes Annually will receive Art Mira Diploma.",
+    "Duration": 1,
+    "Price": 100,
+    "Description": "Basic Art classes for ages 6 and up will begin in September. Registration is open now.  Kids who attend 40 classes yearly will have the opportunity for international art contest and receive Art Mira Diploma. Art classes for September, age 6 and up will run everyday in my art studio Mon to Fri 6pm to 7pm Package 1 Four classes are $100 Monthly",
+    "PictureUrl": "images/classes/kids1.jpg",
+    "Schedule": "Tuesday"
+  },
+  {
+    "Name": "In the Studio/ 8 classes Monthly",
+    "Info": "Kids who attend 40 classes Annually will receive Art Mira Diploma.",
+    "Duration": 1,
+    "Price": 190,
+    "Description": "Basic Art classes for ages 6 and up will begin in September. Registration is open now.  Kids who attend 40 classes yearly will have the opportunity for international art contest and receive Art Mira Diploma. Art classes for September, age 6 and up will run everyday  Mon to Fri 6pm to 7pm Package two - 8 classes are $190 Monthly",
+    "PictureUrl": "images/classes/kids2.jpg",
+    "Schedule": "Mon, Tue, Wed, Thu, Fri"
+  },
+  {
+    "Name": "Professional Private Art Class/ $85",
+    "Info": "Pofecional Art Class In the Studio/ $85 Please pick",
+    "Duration": 1,
+    "Price": 85,
+    "Description": "Pofecional Art Class In the Studio/ 1h is $85",
+    "PictureUrl": "images/classes/kids2.jpg",
+    "Schedule": "Mon, Tue, Wed, Thu, Fri"
+  },
+  {
+    "Name": "Calligraphy 4 classes Monthly",
+    "Info": "Kids who attend 40 classes Annually will receive Art Mira Diploma.",
+    "Duration": 1,
+    "Price": 100,
+    "Description": "Basic Calligraphy classes for ages 8 and up. Registration is open now. Calligraphy  classes for  age 8 and up will run in my art studio Tuesday at 4pm to 5pm Package 1 Four classes are $100 Monthly Calligraphy kit is $40",
+    "PictureUrl": "images/classes/caligraphy.jpg",
+    "Schedule": ""
+  }
+]
