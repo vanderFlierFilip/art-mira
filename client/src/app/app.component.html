@@ -1,1 +1,9 @@
-ARTMIRA
+<nav-bar></nav-bar>
+<div class="container" style="margin-top: 140px">
+  <h1>Welcome to {{ title }}</h1>
+  <ul>
+    <li class="list-unstyled" *ngFor="let class of classes">
+      {{ class.name }}
+    </li>
+  </ul>
+</div>
