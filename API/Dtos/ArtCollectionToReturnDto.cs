@@ -1,12 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
+using Core.Entities;
 
-namespace Core.Entities
+namespace API.Dtos
 {
-    public class ArtCollection : BaseEntity
+    public class ArtCollectionToReturnDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
-        public List<Artwork> Artworks { get; set; }
+        public IList<ArtworkToReturnDto> Artworks { get; set; }
         public string Description { get; set; }
         public string PictureUrl { get; set; }
 

@@ -7,6 +7,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using Core.Interfaces;
+using API.Helpers;
 
 namespace API
 {
@@ -26,11 +27,16 @@ namespace API
             services.AddScoped<IArtClassRepository, ArtClassRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddControllers();
+            services.AddAutoMapper(typeof(MappingProfiles));
             services.AddDbContext<ArtMiraDbContext>(options => options.UseSqlite(_configuration.GetConnectionString("Default")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
             });
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>
@@ -53,7 +59,10 @@ namespace API
             // app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseStaticFiles();
+
             app.UseCors("CorsPolicy");
+
 
             app.UseAuthorization();
 
