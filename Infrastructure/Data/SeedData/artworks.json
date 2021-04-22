@@ -1,0 +1,390 @@
+[
+  {
+    "Name": "Winter Wonderland",
+    "PictureUrl": "images/winter-wonderland.jpeg",
+    "Price": 3800,
+    "Description": "Underneath you is fluffy, cold snow. The sounds of slush fill your ears. The snow sparkles as it's frozen to branches,Landscape a boost of color courtesy of flowers that bloom in winter. ;creating a Winter Wonderland. Although the beautiful sight makes you want to stay, you know you must be on your way...",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 6,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Peace",
+    "PictureUrl": "images/peace.jpeg",
+    "Price": 3800,
+    "Description": "I am mostly inspired by the richness of the natural world.\nIf we look to nature, we can see the balanced shapes and the colours that work in harmony.\nIt is not just the colours but the shapes of nature that work to create art with balance and harmony. Nature combines colours, shapes, and textures that are dramatic and beautiful..",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 6,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Glowing Moonlight",
+    "PictureUrl": "images/glowing-moonlight.jpeg",
+    "Price": 1800,
+    "Description": "I am mostly inspired by the richness of the natural world.\nNature floating on the moonlight.",
+    "Dimensions": "24x24in",
+    "ArtCollectionId": 6,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Trees I",
+    "PictureUrl": "images/trees-1.jpeg",
+    "Price": 450,
+    "Description": "I presents fine entanglements of the trees and the flora with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nInfused with dreamlike visions of the spiritual and an unbreakable\nconnection with the natural world, Mira Mitrova’s creations recall subconscious mysteries buried …",
+    "Dimensions": "12x12in",
+    "ArtCollectionId": 5,
+    "Technique": "Acrylic, Watercolor on Paper"
+  },
+  {
+    "Name": "Bike",
+    "PictureUrl": "images/bike.jpeg",
+    "Price": 450,
+    "Description": "I presents fine entanglements of the bike and the flora with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nInfused with dreamlike visions of the spiritual and an unbreakable\nconnection with the natural world, Mira Mitrova’s creations recall subconscious mysteries buried …",
+    "Dimensions": "12x12in",
+    "ArtCollectionId": 5,
+    "Technique": "Acrylic, Watercolor on Paper"
+  },
+  {
+    "Name": "Trees II",
+    "PictureUrl": "images/trees-2.jpeg",
+    "Price": 450,
+    "Description": "I presents fine entanglements of the trees and the flora with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nInfused with dreamlike visions of the spiritual and an unbreakable\nconnection with the natural world, Mira Mitrova’s creations recall subconscious mysteries buried …",
+    "Dimensions": "12x12in",
+    "ArtCollectionId": 5,
+    "Technique": "Acrylic, Watercolor on Paper"
+  },
+  {
+    "Name": "Trees III",
+    "PictureUrl": "images/trees-3.jpeg",
+    "Price": 450,
+    "Description": "I presents fine entanglements of the trees and the flora with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nInfused with dreamlike visions of the spiritual and an unbreakable\nconnection with the natural world, Mira Mitrova’s creations recall subconscious mysteries buried …",
+    "Dimensions": "12x12in",
+    "ArtCollectionId": 5,
+    "Technique": "Acrylic, Watercolor on Paper"
+  },
+  {
+    "Name": "Ocean",
+    "PictureUrl": "images/ocean.jpeg",
+    "Price": 3800,
+    "Description": "My vision conceptualizes a communion of surrender and realization. Infused with dreamlike visions of the spiritual and an unbreakable connection with the natural world.",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 4,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Purification (self portrait)",
+    "PictureUrl": "images/purification.jpeg",
+    "Price": 8900,
+    "Description": "In exploring themes such as isolation, imprisonment and commoditization, I provides a visual treatise on the human capacity to be proactive in asserting spiritual freedom in the face of situational desolation.\n\nI presents fine entanglements of the portrait and the body with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nFear of the unknown, fear of the invisible, dreams and illusions.",
+    "Dimensions": "31x19in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  
+  {
+    "Name": "Illusion III",
+    "PictureUrl": "images/illusion-3.jpeg",
+    "Price": 21000,
+    "Description": "In exploring themes such as isolation, imprisonment and commoditization, I provides a visual treatise on the human capacity to be proactive in asserting spiritual freedom. I uses shadow and light to echo the inherentcontrasts of the human condition, while texture and line provide a neo-surrealistic take on the mechanics of the improbable. Creations recall subconscious mysteries buried deep in legend and folklore.",
+    "Dimensions": "65x39in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  {
+    "Name": "Illusion II",
+    "PictureUrl": "images/illusion-2.jpeg",
+    "Price": 19000,
+    "Description": "In exploring themes such as isolation, imprisonment and commoditization, I provides a visual treatise on the human capacity to be proactive in asserting spiritual freedom. I uses shadow and light to echo the inherentcontrasts of the human condition, while texture and line provide a neo-surrealistic take on the mechanics of the improbable. Creations recall subconscious mysteries buried deep in legend and folklore.",
+    "Dimensions": "65x31in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  {
+    "Name": "Space",
+    "PictureUrl": "images/space.jpeg",
+    "Price": 7500,
+    "Description": "I presents fine entanglements of the portrait and the body with the whole nature itself (specially with the flora).\nCreated is an inspiring and challenging aiming at presentation of our positioning in the jungle of situations and possibilities, grown up with the rapidly changing modern life.\nFear of the unknown, fear of the invisible, dreams and illusions.",
+    "Dimensions": "38x38in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  {
+    "Name": "Protect yourself from COVID-19",
+    "PictureUrl": "images/protect-yourself-from-covid19.jpeg",
+    "Price": 6900,
+    "Description": "In this self-portrait named “Protect yourself from COVID-19 “, the artist is reflecting a message for isolation and protection against the current virus pandemic.\nWe’re seeing a standard portrait composition, set in a natural, forest-like, ambient. Some of the trees are in the foreground of the composition, covering parts of the artist’s face and body, especially in the part of the mouth and the upper body. The covering of the area around the mouth visually resembles the protective face mask used in the current pandemic. The intent of this is to present a metaphor for the protection that nature itself is giving us.",
+    "Dimensions": "31x19in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  {
+    "Name": "Illusion I",
+    "PictureUrl": "images/illusion-1.jpeg",
+    "Price": 8500,
+    "Description": "",
+    "Dimensions": "65x25in",
+    "ArtCollectionId": 3,
+    "Technique": "Oil on Canvas"
+  },
+  {
+    "Name": "Composition xIII",
+    "PictureUrl": "images/composition-13.jpeg",
+    "Price": 350,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find empty space above the ocean with waves and ships.\n\nI'm working in the style contributing to the growing efforts to connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.\nOriginal handmade mix media painting on handmade paper by brush, india ink, markers, oil pastels and traditional pen and bamboo",
+    "Dimensions": "16x12in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Composition x",
+    "PictureUrl": "images/composition-10.jpeg",
+    "Price": 350,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find landscape view with houses!",
+    "Dimensions": "16x12in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Composition xI",
+    "PictureUrl": "images/composition-11.jpeg",
+    "Price": 350,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find landscape view with houses!",
+    "Dimensions": "16x12in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Composition IX",
+    "PictureUrl": "images/composition-9.jpeg",
+    "Price": 350,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find empty space above the ocean with waves and ships.",
+    "Dimensions": "16x12in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Colorful Land 10",
+    "PictureUrl": "images/colorful-land-10.jpeg",
+    "Price": 280,
+    "Description": "On the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Composition VIII",
+    "PictureUrl": "images/composition-8.jpeg",
+    "Price": 350,
+    "Description": "I WILL SAY\nI want a life full of color. I’m tired of gray, of situensans with storms. All I want is to be like a butterfly and be reborn with bright, celebratory colors and to walk on colorful planet full of positive feeling!",
+    "Dimensions": "16x12in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Pride",
+    "PictureUrl": "image/pride.jpeg",
+    "Price": 350,
+    "Description": "I'm working in the style contributing to the growing efforts to connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other no matter who they are or whom they love, we are all people (HUMAN)...\nWe Are All In This World Together\nFREEDOOM\nOriginal handmade mix media painting on Fabriano paper by brush, india ink, golden leaf, markers, oil pastels, traditional pen and bamboo\n*Style: Modern, Abstract",
+    "Dimensions": "15x11in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Cat",
+    "PictureUrl": "image/cat.jpeg",
+    "Price": 980,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find landscape with cat.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.",
+    "Dimensions": "20x16in",
+    "ArtCollectionId": 2,
+    "Technique": "Pen, Colored pencil on Paper"
+  },
+  {
+    "Name": "Colorful Land 9",
+    "PictureUrl": "image/colorful-land-9.jpeg",
+    "Price": 280,
+    "Description": "On the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Birds",
+    "PictureUrl": "image/birds.jpeg",
+    "Price": 980,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find landscape with bird.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.",
+    "Dimensions": "16x20in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Colorful Land 4",
+    "PictureUrl": "image/colorful-land-4.jpeg",
+    "Price": 330,
+    "Description": "My mystically surreal and sensual deities slowly reveal themselves and their alluring power, at once immersed in and a part of the colorful land.",
+    "Dimensions": "10x8in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Composition V",
+    "PictureUrl": "image/composition-5.jpeg",
+    "Price": 300,
+    "Description": "On the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.\nI WILL SAY\nI want a life full of color. I’m tired of gray, of situensans with storms. All I want is to be like a butterfly and be reborn with bright, celebratory colors and to walk on colorful planet full of positive feeling!",
+    "Dimensions": "10x8in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Cardboard"
+  },
+  {
+    "Name": "Colorful Earth",
+    "PictureUrl": "image/colorful-earth.jpeg",
+    "Price": 990,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Colorful Land 8",
+    "PictureUrl": "image/colorful-land-8.jpeg",
+    "Price": 300,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Cardboard"
+  },
+  {
+    "Name": "Colorful Earth 1",
+    "PictureUrl": "image/colorful-earth-1.jpeg",
+    "Price": 990,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Birds I",
+    "PictureUrl": "image/birds-1.jpeg",
+    "Price": 790,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, one can find landscape with bird.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.",
+    "Dimensions": "24x24in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Colorful Land 11",
+    "PictureUrl": "image/colorful-land-11.jpeg",
+    "Price": 280,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 2,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Explore",
+    "PictureUrl": "image/explore.jpeg",
+    "Price": 7800,
+    "Description": "The visual language used by the artist in this picture, is similar to that of Jean-Michele Basquiat, especially in the ways of building and arranging the forms in the picture plain. This makes the picture a contemporary allegory of the (in)human future.",
+    "Dimensions": "40x30in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Alien",
+    "PictureUrl": "image/alien.jpeg",
+    "Price": 4500,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "20x16in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "New Planet",
+    "PictureUrl": "image/new-planet.jpeg",
+    "Price": 280,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, can find new planet.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "New Planet I",
+    "PictureUrl": "image/new-planet-1.jpeg",
+    "Price": 390,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, can find new planet.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "New Planet II",
+    "PictureUrl": "image/new-planet-2.jpeg",
+    "Price": 280,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn this abstract drawing, can find new planet.\nI'm working in the style contributing to the growing efforts to connect with nature, connect with something pure, something true and something free within the human spirit, joining people in a communication experience to connect with each other.",
+    "Dimensions": "6x6in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Give Love",
+    "PictureUrl": "image/give-love.jpeg",
+    "Price": 2800,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "36x36in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Chalk on Canvas"
+  },
+  {
+    "Name": "Marilyn Monroe",
+    "PictureUrl": "image/marilyn-monroe.jpeg",
+    "Price": 1900,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.",
+    "Dimensions": "24x24in",
+    "ArtCollectionId": 1,
+    "Technique": "Acrylic, Collage on Canvas"
+  },
+  {
+    "Name": "Golden Life",
+    "PictureUrl": "image/golden-life.jpeg",
+    "Price": 4000,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.",
+    "Dimensions": "24x36in",
+    "ArtCollectionId": 7,
+    "Technique": "Acrylic, Pastel on Canvas"
+  },
+  {
+    "Name": "Escape",
+    "PictureUrl": "image/escape.jpeg",
+    "Price": 4900,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.",
+    "Dimensions": "36x24in",
+    "ArtCollectionId": 7,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Balancing",
+    "PictureUrl": "image/balancing.jpeg",
+    "Price": 3100,
+    "Description": "Created is an inspiring and challenging aiming at presentation of our positioning in the world of situations and possibilities, grown up with the rapidly changing modern life.\nOn the abstract painting, one can find empty space above the landscapes with waves water, ports, ships, strange buildings, sport shoe that is ready to move etc.",
+    "Dimensions": "36x24in",
+    "ArtCollectionId": 7,
+    "Technique": "Acrylic, Pencil on Canvas"
+  },
+  {
+    "Name": "Mixed Emotion 2",
+    "PictureUrl": "image/mixed-emotion-2.jpeg",
+    "Price": 900,
+    "Description": "An elegant flair for the fantastic lingers in the magic of my visions, as I paints in mixed media with a lyrical eloquence. I begins each work focused on a single form, later dividing and fracturing the image with increasing complexity and detail. There is a smooth perfection to my skilled use of the paints, and a feeling of crispness and clarity in my mark that fills my surfaces with life.",
+    "Dimensions": "36x18in",
+    "ArtCollectionId": 7,
+    "Technique": "Acrylic, Colored Pencil on Canvas"
+  },
+  {
+    "Name": "Mixed Emotion 1",
+    "PictureUrl": "image/mixed-emotion-1.jpeg",
+    "Price": 900,
+    "Description": "An elegant flair for the fantastic lingers in the magic of my visions, as I paints in mixed media with a lyrical eloquence. I begins each work focused on a single form, later dividing and fracturing the image with increasing complexity and detail. There is a smooth perfection to my skilled use of the paints, and a feeling of crispness and clarity in my mark that fills my surfaces with life.",
+    "Dimensions": "36x18in",
+    "ArtCollectionId": 7,
+    "Technique": "Acrylic, Colored Pencil on Canvas"
+  }
+]

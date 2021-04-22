@@ -4,17 +4,16 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Data.Config
 {
-    public class ArtClassConfiguration : IEntityTypeConfiguration<ArtClass>
+    public class ArtCollectionConfiguration : IEntityTypeConfiguration<ArtCollection>
     {
-        public void Configure(EntityTypeBuilder<ArtClass> builder)
+        public void Configure(EntityTypeBuilder<ArtCollection> builder)
         {
             builder.Property(p => p.Id).IsRequired();
             builder.Property(p => p.Name).IsRequired();
-            builder.Property(p => p.Info).IsRequired();
-            builder.Property(p => p.Price).IsRequired().HasColumnType("decimal(18,3)");
             builder.Property(p => p.Description).IsRequired();
-            builder.Property(p => p.Duration).IsRequired();
             builder.Property(p => p.PictureUrl).IsRequired();
+
+
 
         }
     }

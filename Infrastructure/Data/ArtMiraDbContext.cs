@@ -11,6 +11,9 @@ namespace Infrastructure.Data
         }
 
         public DbSet<ArtClass> ArtClasses { get; set; }
+        public DbSet<ArtCollection> ArtCollections { get; set; }
+        public DbSet<Artwork> Artworks { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
