@@ -36,6 +36,53 @@ namespace Infrastructure.Data
                 var logger = loggerFactory.CreateLogger<ArtClassContextSeed>();
                 logger.LogError(ex.Message);
             }
+            // TODO: Separate the methods below from this class into another
+            try
+            {
+                if (!context.ArtCollections.Any())
+                {
+                    var artCollectionsData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/collections.json");
+
+                    var artCollections = JsonSerializer.Deserialize<List<ArtCollection>>(artCollectionsData);
+
+                    foreach (var artCollection in artCollections)
+                    {
+                        context.ArtCollections.Add(artCollection);
+                    }
+                    await context.SaveChangesAsync();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                var logger = loggerFactory.CreateLogger<ArtClassContextSeed>();
+                logger.LogError(ex.Message);
+            }
+            try
+            {
+                if (!context.Artworks.Any())
+                {
+                    var artworksData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/artworks.json");
+
+                    var artworks = JsonSerializer.Deserialize<List<Artwork>>(artworksData);
+
+                    foreach (var artwork in artworks)
+                    {
+                        context.Artworks.Add(artwork);
+                    }
+                    await context.SaveChangesAsync();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                var logger = loggerFactory.CreateLogger<ArtClassContextSeed>();
+                logger.LogError(ex.Message);
+            }
         }
+
+
     }
 }

@@ -15,6 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
+      "prefix": "neg",
       
       "architect": {
         "build": {
