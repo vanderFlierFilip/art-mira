@@ -1,6 +1,6 @@
-namespace Core.Entities
+namespace API.Dtos
 {
-    public class Artwork : BaseEntity
+    public class ArtworkToReturnDto
     {
         public string Name { get; set; }
         public int ArtCollectionId { get; set; }

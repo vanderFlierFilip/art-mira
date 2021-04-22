@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using API.Dtos;
+using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -11,22 +13,26 @@ namespace API.Controllers
     public class ArtworksController : ControllerBase
     {
         private readonly IGenericRepository<Artwork> _artworksRepo;
-        public ArtworksController(IGenericRepository<Artwork> artworksRepo)
+        private readonly IMapper _mapper;
+        public ArtworksController(IGenericRepository<Artwork> artworksRepo, IMapper mapper)
         {
+            _mapper = mapper;
             _artworksRepo = artworksRepo;
         }
 
         [HttpGet]
-        public async Task<List<Artwork>> GetArtworks()
+        public async Task<IReadOnlyList<ArtworkToReturnDto>> GetArtworks()
         {
             var artworks = await _artworksRepo.ListAllAsync();
 
-            return (List<Artwork>)artworks;
+            return _mapper.Map<IReadOnlyList<Artwork>, IReadOnlyList<ArtworkToReturnDto>>(artworks);
+
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<Artwork>> GetArtwork(int id)
+        public async Task<ActionResult<ArtworkToReturnDto>> GetArtwork(int id)
         {
-            return await _artworksRepo.GetByIdAsync(id);
+            var artwork = await _artworksRepo.GetByIdAsync(id);
+            return _mapper.Map<Artwork, ArtworkToReturnDto>(artwork);
         }
     }
 }
