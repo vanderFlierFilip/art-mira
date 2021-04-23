@@ -4,9 +4,12 @@ namespace Core.Specifications
 {
     public class ArtCollectionsWithArtworksSpecification : BaseSpecification<ArtCollection>
     {
-        public ArtCollectionsWithArtworksSpecification()
+        public ArtCollectionsWithArtworksSpecification(string sort)
         {
             AddInclude(x => x.Artworks);
+            AddOrderBy(x => x.Name);
+
+
         }
         public ArtCollectionsWithArtworksSpecification(int id)
             : base(x => x.Id == id)

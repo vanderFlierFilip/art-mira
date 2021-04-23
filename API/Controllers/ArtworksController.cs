@@ -2,9 +2,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
+using API.Helpers;
 using AutoMapper;
+using Core;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,11 +25,19 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IReadOnlyList<ArtworkToReturnDto>> GetArtworks()
+        public async Task<ActionResult<Pagination<ArtworkToReturnDto>>> GetArtworks([FromQuery] ArtworkSpecParams artworkParams)
         {
-            var artworks = await _artworksRepo.ListAllAsync();
+            var spec = new ArtworkWithSpecification(artworkParams);
 
-            return _mapper.Map<IReadOnlyList<Artwork>, IReadOnlyList<ArtworkToReturnDto>>(artworks);
+            var countSpec = new ArtworkWithSpecification(artworkParams);
+
+            var totalItems = await _artworksRepo.CountAsync(countSpec);
+
+            var artworks = await _artworksRepo.ListAsync(spec);
+
+            var data = _mapper.Map<IReadOnlyList<Artwork>, IReadOnlyList<ArtworkToReturnDto>>(artworks);
+
+            return Ok(new Pagination<ArtworkToReturnDto>(artworkParams.PageIndex, artworkParams.PageSize, totalItems, data));
 
         }
         [HttpGet("{id}")]
@@ -35,7 +46,9 @@ namespace API.Controllers
 
         public async Task<ActionResult<ArtworkToReturnDto>> GetArtwork(int id)
         {
-            var artwork = await _artworksRepo.GetByIdAsync(id);
+            var spec = new ArtworkWithSpecification(id);
+
+            var artwork = await _artworksRepo.GetEntityWithSpec(spec);
 
             if (artwork == null) return NotFound(new ApiResponse(404));
 
