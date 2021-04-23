@@ -6,9 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/art-classes")]
-    public class ArtClassesController : ControllerBase
+
+    public class ArtClassesController : BaseApiController
     {
         private readonly IGenericRepository<ArtClass> _artclassesRepo;
         public ArtClassesController(IGenericRepository<ArtClass> artclassesRepo)
