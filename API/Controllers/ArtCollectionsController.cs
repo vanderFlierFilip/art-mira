@@ -2,17 +2,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
+using API.Errors;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/collections")]
-    public class ArtCollectionsController : ControllerBase
+
+    public class ArtCollectionsController : BaseApiController
     {
         private readonly IGenericRepository<ArtCollection> _artCollectionsRepo;
         private readonly IMapper _mapper;
@@ -34,11 +35,16 @@ namespace API.Controllers
             return Ok(_mapper.Map<IReadOnlyList<ArtCollection>, IReadOnlyList<ArtCollectionToReturnDto>>(artCollections));
         }
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ArtCollectionToReturnDto>> GetArtCollection(int id)
         {
             var spec = new ArtCollectionsWithArtworksSpecification(id);
 
             var artCollection = await _artCollectionsRepo.GetEntityWithSpec(spec);
+
+            if (artCollection == null) return NotFound(new ApiResponse(404));
+
             return _mapper.Map<ArtCollection, ArtCollectionToReturnDto>(artCollection);
 
         }
