@@ -26,9 +26,9 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ArtCollectionToReturnDto>>> GetArtCollections()
+        public async Task<ActionResult<IReadOnlyList<ArtCollectionToReturnDto>>> GetArtCollections(string sort)
         {
-            var spec = new ArtCollectionsWithArtworksSpecification();
+            var spec = new ArtCollectionsWithArtworksSpecification(sort);
 
             var artCollections = await _artCollectionsRepo.ListAsync(spec);
 
