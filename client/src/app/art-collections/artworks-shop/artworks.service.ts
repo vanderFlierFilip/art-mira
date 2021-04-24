@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { IPagination } from './../shared/models/pagination';
+import { IPagination } from '.././../shared/models/pagination';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 

@@ -1,13 +1,25 @@
 <div
-  class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white fixed-top"
+  class="d-flex flex-column flex-md-row align-items-center justify-content-between p-3 px-md-4 mb-3 bg-white fixed-top navbar"
   fixed-top
 >
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#">Courses</a>
-    <a class="p-2 text-dark" href="#">Gallery</a>
-    <a class="p-2 text-dark" href="#">About Me</a>
+    <a class="p-2" [routerLink]="['/art-classes']" routerLinkActive="active"
+      >Art Classes</a
+    >
+    <a class="p-2" [routerLink]="['/collections']" routerLinkActive="active"
+      >Gallery</a
+    >
+    <a class="p-2" [routerLink]="['/about-me']" routerLinkActive="active"
+      >About Me</a
+    >
   </nav>
-  <img class="image-container" src="assets/images/logo2.png" alt="logo" />
+  <img
+    class="image-container"
+    [routerLink]="['/']"
+    src="assets/images/logo2.png"
+    alt="logo"
+    class="logo"
+  />
 
   <div class="d-flex align-items-center">
     <a class="position-relative">

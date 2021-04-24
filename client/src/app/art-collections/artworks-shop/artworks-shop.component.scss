@@ -10,11 +10,11 @@ img {
         font-size: 21px;
         text-align: center;
     
-        -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadein 3s; /* Firefox < 16 */
-            -ms-animation: fadein 3s; /* Internet Explorer */
-             -o-animation: fadein 3s; /* Opera < 12.1 */
-                animation: fadein 3s;
+        -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadein 1s; /* Firefox < 16 */
+            -ms-animation: fadein 1s; /* Internet Explorer */
+             -o-animation: fadein 1s; /* Opera < 12.1 */
+                animation: fadein 1s;
     }
     
     @keyframes fadein {
@@ -61,7 +61,9 @@ img {
     flex-direction:row; /*default value is row*/
     height:90%;
     width:75%;
-    
+    padding: 2% 0% 8% 0%;
+   
+   
 
    
 }
@@ -72,12 +74,10 @@ img {
     padding: 0px 20px 0px 20px;
     background-color: #f2f2f2;
 	cursor: pointer;
-
+    &.price {
+        margin-bottom: 5%;
+        margin-top: 0px;
+    }
 
 }
-    
-    p {
-        padding: 5%;
-        margin: 5%;
-        font-weight: 900;
-    }
+

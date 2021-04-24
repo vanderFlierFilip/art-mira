@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtCollectionsComponent } from './art-collections.component';
@@ -7,7 +8,8 @@ import { ArtCollectionsComponent } from './art-collections.component';
 @NgModule({
   declarations: [ArtCollectionsComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [ArtCollectionsComponent]
 })

@@ -1,10 +1,15 @@
+.navbar {
+    display: flex;
+}
+
+
 .cart-no {
     position: absolute;
     min-height: 25px;
     min-width: 25px; 
     border-radius: 50%;
     font-size: 1em;
-    background: lightseagreen;
+    background: #BFEFFF;
     color:white;
     top: -12px;
     right: 32px;
@@ -14,4 +19,17 @@
 img {
     max-height: 90px;
 }
-   
+
+a {
+    text-decoration: none;
+    color: #343a40;
+    &.active {
+        color:  #6bb4cc;
+    }
+}
+.logo{
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}

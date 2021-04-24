@@ -1,19 +1,14 @@
 <div class="container-lg">
   <div class="row">
-    <div class="col-md-4 gallery" *ngFor="let collection of artCollections">
+    <div class="col-md-4 gallery" *ngFor="let artwork of artworks">
       <div class="gallery-item">
-        <img
-          routerLink="/collections/{{ collection.id }}"
-          class="gallery"
-          src="{{ collection.pictureUrl }}"
-          alt=""
-        />
+        <img class="gallery zoom" src="{{ artwork.pictureUrl }}" />
       </div>
       <div class="container">
         <div class="row">
           <span class="d-inline-block text-wrap price" style="max-width: 90px">
-            <p class="name h5 text-left text-muted">
-              {{ collection.name }}
+            <p class="h6 text-left stext-muted">
+              {{ artwork.name }} {{ artwork.price | currency }}
             </p>
           </span>
           <div class="col"></div>

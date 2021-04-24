@@ -9,10 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtCollectionsComponent implements OnInit {
   artCollections: IArtCollection[];
-  
   constructor(private artCollectionService: ArtCollectionsService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.artCollectionService.getArtCollections().subscribe(response => {
       this.artCollections = response;
       console.log(this.artCollections);

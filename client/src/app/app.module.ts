@@ -1,5 +1,8 @@
+import { ArtClassesModule } from './art-classes/art-classes.module';
+import { AboutMeModule } from './about-me/about-me.module';
+import { HomeModule } from './home/home.module';
 import { ArtCollectionsModule } from './art-collections/art-collections.module';
-import { ArtworksShopModule } from './artworks-shop/artworks-shop.module';
+import { ArtworksShopModule } from './art-collections/artworks-shop/artworks-shop.module';
 import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,8 +19,11 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
+    ArtCollectionsModule,
     ArtworksShopModule,
-    ArtCollectionsModule
+    HomeModule,
+    AboutMeModule,
+    ArtClassesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
