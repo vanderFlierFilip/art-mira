@@ -6,10 +6,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ArtCollectionsService {
-  baseUrl: 'https://localhost:5001/api/artcollections';
+  baseUrl = 'https://localhost:5001/api/';
   constructor(private http: HttpClient) { }
 
   getArtCollections() {
-    return this.http.get<IArtCollection[]>(this.baseUrl);
+    return this.http.get<IArtCollection[]>(this.baseUrl + 'artcollections');
+  }
+  getArtworks(id: number) {
+    return this.http.get<IArtCollection>(this.baseUrl + 'artcollections/' + id);
   }
 }
+
