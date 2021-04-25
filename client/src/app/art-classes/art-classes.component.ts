@@ -1,3 +1,5 @@
+import { IArtClass } from './../shared/models/art-class';
+import { ArtClassesService } from './art-classes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./art-classes.component.scss']
 })
 export class ArtClassesComponent implements OnInit {
-
-  constructor() { }
+  artClasses: IArtClass[];
+  constructor(private classesService: ArtClassesService) { }
 
   ngOnInit(): void {
+    this.classesService.getArtClassesService().subscribe(classes => {
+      this.artClasses = classes;
+    });
   }
 
 }

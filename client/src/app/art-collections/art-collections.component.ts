@@ -14,7 +14,6 @@ export class ArtCollectionsComponent implements OnInit {
   ngOnInit(){
     this.artCollectionService.getArtCollections().subscribe(response => {
       this.artCollections = response;
-      console.log(this.artCollections);
     }, error => console.log(error));
   }
 

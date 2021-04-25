@@ -13,6 +13,11 @@ namespace API.Helpers
 
             CreateMap<ArtCollection, ArtCollectionToReturnDto>()
                 .ForMember(d => d.PictureUrl, o => o.MapFrom<ArtCollectionUrlResolver>());
+
+
+            CreateMap<ArtClass, ArtClassDto>()
+                .ForMember(d => d.PictureUrl, o => o.MapFrom<ArtClassUrlResolver>());
+
         }
     }
 }

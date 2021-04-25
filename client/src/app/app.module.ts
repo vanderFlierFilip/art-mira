@@ -1,3 +1,4 @@
+import { ArtworkDetailsModule } from './art-collections/artworks-shop/artwork-details/artwork-details.module';
 import { ArtClassesModule } from './art-classes/art-classes.module';
 import { AboutMeModule } from './about-me/about-me.module';
 import { HomeModule } from './home/home.module';
@@ -23,7 +24,8 @@ import { AppComponent } from './app.component';
     ArtworksShopModule,
     HomeModule,
     AboutMeModule,
-    ArtClassesModule
+    ArtClassesModule,
+    ArtworkDetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

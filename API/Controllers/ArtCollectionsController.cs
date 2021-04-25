@@ -34,6 +34,7 @@ namespace API.Controllers
 
             return Ok(_mapper.Map<IReadOnlyList<ArtCollection>, IReadOnlyList<ArtCollectionToReturnDto>>(artCollections));
         }
+
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]

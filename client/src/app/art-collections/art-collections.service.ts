@@ -1,6 +1,7 @@
 import { IArtCollection } from './../shared/models/art-collection';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { IArtwork } from '../shared/models/artwork';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,9 @@ export class ArtCollectionsService {
   }
   getArtworks(id: number) {
     return this.http.get<IArtCollection>(this.baseUrl + 'artcollections/' + id);
+  }
+  getArtwork(id: number) {
+    return this.http.get<IArtwork>(this.baseUrl + 'artcollections/id' + id);
   }
 }
 

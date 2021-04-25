@@ -1,1 +1,32 @@
-<p>art-classes works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mh-100 card-body" *ngFor="let class of artClasses">
+      <div class="card mb-4 shadow-sm">
+        <img src="{{ class.pictureUrl }}" alt="" />
+
+        <div class="card-body">
+          <p class="card-title">
+            {{ class.info }}
+          </p>
+          <hr />
+          <p class="card-text">{{ class.schedule }}</p>
+          <p class="card-text">{{ class.price | currency }}</p>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="">
+                <button
+                  routerLink="/art-classes/{{ class.id }}"
+                  type="button"
+                  class="btn btn-outline-secondary"
+                >
+                  Book
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
