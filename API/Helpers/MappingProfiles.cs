@@ -1,6 +1,7 @@
 using API.Dtos;
 using AutoMapper;
 using Core.Entities;
+using Core.Entities.Identity;
 
 namespace API.Helpers
 {
@@ -18,6 +19,8 @@ namespace API.Helpers
             CreateMap<ArtClass, ArtClassDto>()
                 .ForMember(d => d.PictureUrl, o => o.MapFrom<ArtClassUrlResolver>());
 
+            CreateMap<Address, AddressDto>().ReverseMap();
         }
+
     }
 }

@@ -8,6 +8,7 @@ using API.Helpers;
 using API.MIddleware;
 using API.Extensions;
 using StackExchange.Redis;
+using Infrastructure.Identity;
 
 namespace API
 {
@@ -28,6 +29,11 @@ namespace API
             services.AddDbContext<ArtMiraDbContext>(options =>
                 options.UseSqlite(_configuration.GetConnectionString("Default")));
 
+            services.AddDbContext<AppIdentityDbContext>(x =>
+            {
+                x.UseSqlite(_configuration.GetConnectionString("IdentityConnection"));
+            });
+
             services.AddSingleton<IConnectionMultiplexer>(c =>
             {
                 var configuration = ConfigurationOptions.Parse(_configuration
@@ -36,7 +42,7 @@ namespace API
             });
 
             services.AddApplicationServices();
-
+            services.AddIdentityServices(_configuration);
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -65,6 +71,8 @@ namespace API
             app.UseStaticFiles();
 
             app.UseCors("CorsPolicy");
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
