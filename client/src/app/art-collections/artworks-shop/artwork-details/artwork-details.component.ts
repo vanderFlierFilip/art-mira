@@ -13,6 +13,15 @@ export class ArtworkDetailsComponent implements OnInit {
   constructor (private artCollectionsService: ArtCollectionsService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.loadArtwork();
+  }
+
+  loadArtwork() {
+    this.artCollectionsService.getArtwork(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(response => {
+      this.artwork = response;
+    }, error => {
+      console.log('ERROR: ', error);
+    });
   }
 
 

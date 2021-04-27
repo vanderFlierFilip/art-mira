@@ -1,21 +1,23 @@
+import { ArtClassesRoutingModule } from './art-classes-routing.module';
 import { SharedModule } from './../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtClassesComponent } from './art-classes.component';
+import { ArtClassesDetailsComponent } from './art-classes-details /art-classes-details.component';
 
 
 
 @NgModule({
-  declarations: [ArtClassesComponent],
+  declarations: [ArtClassesComponent, ArtClassesDetailsComponent],
   imports: [
     CommonModule,
-    RouterModule,
-    SharedModule
+    SharedModule,
+    ArtClassesRoutingModule
 
   ],
   exports: [
-    ArtClassesComponent,
-  ]
+    ArtClassesComponent
+  ] 
 })
 export class ArtClassesModule { }

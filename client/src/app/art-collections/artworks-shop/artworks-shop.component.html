@@ -3,7 +3,7 @@
     <div class="col-md-4 gallery" *ngFor="let artwork of artworks">
       <div class="gallery-item">
         <img
-          [routerLink]="['collections/:id', artwork.id]"
+          [routerLink]="['artworks', artwork.id, ]"
           routerLinkActive="router-link-active"
           src="{{ artwork.pictureUrl }}"
         />

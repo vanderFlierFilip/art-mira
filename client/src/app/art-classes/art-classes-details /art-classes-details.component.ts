@@ -17,8 +17,10 @@ export class ArtClassesDetailsComponent implements OnInit {
     this.loadArtClassDetails();
   }
   loadArtClassDetails() {
-    this.artClassesService.getArtClass(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(response => {
+    this.artClassesService.getArtClass(+this.activatedRoute.snapshot.paramMap.get('id'))
+    .subscribe(response => {
       this.artClass = response;
+      console.log(this.artClass);
     }, error => console.log(error));
   }
 

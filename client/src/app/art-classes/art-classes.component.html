@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-md-4 mh-100 card-body" *ngFor="let class of artClasses">
       <div class="card mb-4 shadow-sm">
-        <img src="{{ class.pictureUrl }}" alt="" />
+        <img
+          routerLink="/art-classes/{{ class.id }}"
+          src="{{ class.pictureUrl }}"
+          alt=""
+        />
 
         <div class="card-body">
           <p class="card-title">

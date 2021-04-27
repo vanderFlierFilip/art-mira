@@ -17,7 +17,7 @@ export class ArtCollectionsService {
     return this.http.get<IArtCollection>(this.baseUrl + 'artcollections/' + id);
   }
   getArtwork(id: number) {
-    return this.http.get<IArtwork>(this.baseUrl + 'artcollections/id' + id);
+    return this.http.get<IArtwork>(this.baseUrl + 'artworks/' + id);
   }
 }
 
