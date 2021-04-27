@@ -7,6 +7,7 @@ using Infrastructure.Data;
 using API.Helpers;
 using API.MIddleware;
 using API.Extensions;
+using StackExchange.Redis;
 
 namespace API
 {
@@ -26,6 +27,13 @@ namespace API
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddDbContext<ArtMiraDbContext>(options =>
                 options.UseSqlite(_configuration.GetConnectionString("Default")));
+
+            services.AddSingleton<IConnectionMultiplexer>(c =>
+            {
+                var configuration = ConfigurationOptions.Parse(_configuration
+                    .GetConnectionString("Redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
 
             services.AddApplicationServices();
 
