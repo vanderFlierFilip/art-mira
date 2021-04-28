@@ -8,6 +8,9 @@ const routes: Routes = [
   { path: 'collections', loadChildren: () => import('./art-collections/art-collections.module').then(mod => mod.ArtCollectionsModule)},
   
   { path: 'art-classes', loadChildren: () => import('./art-classes/art-classes.module').then(mod => mod.ArtClassesModule)},
+
+  { path: 'art-classes', loadChildren: () => import('./art-classes/art-classes.module').then(mod => mod.ArtClassesModule)},
+
   { path: 'about-me', component: AboutMeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 
