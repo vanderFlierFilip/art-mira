@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HttpClientModule,
     CoreModule,
-     HomeModule,
+    HomeModule,
     AboutMeModule,
     ArtClassesModule,
   ],

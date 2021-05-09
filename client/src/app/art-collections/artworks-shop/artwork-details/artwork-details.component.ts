@@ -2,6 +2,7 @@ import { IArtwork } from './../../../shared/models/artwork';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ArtCollectionsService } from '../../art-collections.service';
+import {BasketService} from '../../../basket/basket.service';
 
 @Component({
   selector: 'neg-artwork-details',
@@ -10,7 +11,10 @@ import { ArtCollectionsService } from '../../art-collections.service';
 })
 export class ArtworkDetailsComponent implements OnInit {
   artwork: IArtwork;
-  constructor (private artCollectionsService: ArtCollectionsService, private activatedRoute: ActivatedRoute) { }
+
+  constructor(private artCollectionsService: ArtCollectionsService,
+              private activatedRoute: ActivatedRoute,
+              private basketService: BasketService) { }
 
   ngOnInit(): void {
     this.loadArtwork();
@@ -23,6 +27,8 @@ export class ArtworkDetailsComponent implements OnInit {
       console.log('ERROR: ', error);
     });
   }
-
+  addItemToBasket() {
+    this.basketService.addItemToBasket(this.artwork);
+  }
 
 }

@@ -1,4 +1,5 @@
 export interface IArtwork {
+    id: number;
     name: string;
     artCollectionId: number;
     pictureUrl: string;

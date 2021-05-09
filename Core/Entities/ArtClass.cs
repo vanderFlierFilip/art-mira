@@ -12,3 +12,4 @@ namespace Core.Entities
         public bool IsAvailableOnline { get; set; }
     }
 }
+

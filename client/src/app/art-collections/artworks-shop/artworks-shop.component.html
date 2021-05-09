@@ -1,5 +1,6 @@
-<div class="container-lg" style="margin-top: 140px; margin-left: 140px">
-  <div class="row">
+<neg-section-header></neg-section-header>
+<div class="container-lg">
+  <div class="row ">
     <div class="col-md-4 gallery" *ngFor="let artwork of artworks">
       <div class="gallery-item">
         <img
@@ -9,13 +10,12 @@
         />
       </div>
       <div class="container">
-        <div class="row">
-          <span class="d-inline-block text-wrap price" style="max-width: 90px">
-            <p class="h6 text-left stext-muted">
+        <div class=" row d-flex justify-content-start">
+          <span class="title d-inline-block text-wrap " style="max-width: 90px">
+            <p class="h6 title text-left text-muted ">
               {{ artwork.name }} {{ artwork.price | currency }}
             </p>
           </span>
-          <div class="col"></div>
         </div>
       </div>
     </div>
