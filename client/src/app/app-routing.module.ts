@@ -4,6 +4,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {AuthGuard} from './core/guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,7 +13,9 @@ const routes: Routes = [
   { path: 'basket', loadChildren: () => import('./basket/basket.module').then(mod => mod.BasketModule)},
   { path: 'collections', loadChildren: () => import('./art-collections/art-collections.module').then(mod => mod.ArtCollectionsModule)},
   { path: 'art-classes', loadChildren: () => import('./art-classes/art-classes.module').then(mod => mod.ArtClassesModule)},
-  { path: 'checkout', loadChildren: () => import('./checkout/checkout.module').then(mod => mod.CheckoutModule)},
+  { path: 'checkout', canActivate: [AuthGuard], loadChildren: () => import('./checkout/checkout.module').then(mod => mod.CheckoutModule)},
+  { path: 'account', loadChildren: () => import('./account/account.module').then(mod => mod.AccountModule)},
+
 
   { path: 'art-classes', loadChildren: () => import('./art-classes/art-classes.module').then(mod => mod.ArtClassesModule)},
   { path: 'about-me', component: AboutMeComponent },
