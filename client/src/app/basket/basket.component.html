@@ -36,8 +36,8 @@
                     <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
                     <td class="align-middle">
                         <div class="px-4">
-                          <a class="text-danger ">
-                            <i class="fa fa-trash" style="font-size: 2em;"></i>
+                          <a class="text-danger" (click)="removeBasketItem(item)">
+                            <i class="fa fa-trash" style="font-size: 2em; cursor: pointer"></i>
                           </a>
                         </div>
                     </td>

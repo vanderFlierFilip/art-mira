@@ -80,4 +80,24 @@ export class BasketService {
       subtotal, total, shipping
     });
   }
+  removeItemFromBasket(item: IBasketItem) {
+    const basket = this.getCurrentBasketValue();
+    if (basket.items.some(x => x.id === item.id)) {
+      basket.items = basket.items.filter(i => i.id !== item.id);
+      if (basket.items.length > 0) {
+        this.setBasket(basket);
+        }else {
+        this.deleteBasket(basket);
+      }
+    }
+  }
+
+  deleteBasket(basket: IBasket) {
+        return this.http.delete(this.baseUrl + 'Baskets?id=' + basket.id).subscribe(() => {
+          this.basketSource.next(null);
+          this.basketSource.next(null);
+          localStorage.removeItem('basket_id');
+        }, error => console.log(error));
+    }
+
 }
