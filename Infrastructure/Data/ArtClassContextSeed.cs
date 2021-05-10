@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using System.Collections.Generic;
 using Core.Entities;
+using Core.Entities.OrderAggregate;
 
 namespace Infrastructure.Data
 {
@@ -26,6 +27,20 @@ namespace Infrastructure.Data
                     foreach (var artClass in artClasses)
                     {
                         context.ArtClasses.Add(artClass);
+                    }
+                    await context.SaveChangesAsync();
+
+                }
+                if (!context.DeliveryMethods.Any())
+                {
+                    var dmData =
+                        File.ReadAllText("../Infrastructure/Data/SeedData/delivery.json");
+
+                    var deliveryMethods = JsonSerializer.Deserialize<List<DeliveryMethod>>(dmData);
+
+                    foreach (var item in deliveryMethods)
+                    {
+                        context.DeliveryMethods.Add(item);
                     }
                     await context.SaveChangesAsync();
 
