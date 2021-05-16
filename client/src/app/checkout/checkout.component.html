@@ -1,3 +1,24 @@
 <div class="container mt-5">
-  <h1>Only authorized users should see this-a !</h1>
+  <div class="row">
+    <div class="col-8">
+      <neg-stepper [linearModeSelected]="false" #appStepper>
+        <cdk-step [label]="'Address'" [completed]="(checkoutForm.get('addressForm').valid)">
+          <neg-checkout-address [checkoutForm]="checkoutForm"></neg-checkout-address>
+        </cdk-step>
+        <cdk-step [label]="'Delivery'" [completed]="(checkoutForm.get('deliveryForm').valid)">
+          <neg-checkout-delivery [checkoutForm]="checkoutForm"></neg-checkout-delivery>
+        </cdk-step>
+        <cdk-step [label]="'Review'" >
+          <neg-checkout-review></neg-checkout-review>
+        </cdk-step>
+        <cdk-step [label]="'Payment'">
+          <neg-checkout-payment></neg-checkout-payment>
+        </cdk-step>
+
+      </neg-stepper>
+    </div>
+    <div class="col-4">
+      <neg-order-totals></neg-order-totals>
+    </div>
+  </div>
 </div>
