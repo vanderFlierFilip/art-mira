@@ -1,11 +1,19 @@
 <div *ngIf="artwork">
-  <h1>
-    {{ artwork.name }}
-  </h1>
+
   <div class="container">
-    <div class="row-cols-3">
-      <img src="{{ artwork.pictureUrl }}" alt="" />
-      <button class="btn btn-dark" (click)="addItemToBasket()">Add to Cart</button>
+    <div class="row">
+      <div class="col-6">
+        <img class="artwork" src="{{ artwork.pictureUrl }}" alt="" />
+      </div>
+      <div class="col-6">
+        <h1>{{artwork.name}}</h1>
+        <p>{{artwork.description}}</p>
+        <p>Dimensions: {{artwork.dimensions}}</p>
+
+        <button class="btn btn-dark btn-block" (click)="addItemToBasket()">Add to Cart</button>
+      </div>
     </div>
   </div>
+
 </div>
+

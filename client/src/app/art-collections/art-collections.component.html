@@ -1,7 +1,7 @@
 <div class="container-lg">
   <div class="row">
-    <div class="col-md-4 gallery" *ngFor="let collection of artCollections">
-      <div class="gallery-item">
+    <div class="col-md-4 gallery my-3" *ngFor="let collection of artCollections">
+      <div class="gallery-item " >
         <img
           routerLink="/collections/{{ collection.id }}"
           class="gallery"
@@ -12,7 +12,7 @@
       <div class="container">
         <div class="row">
           <span class="d-inline-block text-wrap price" style="max-width: 90px">
-            <p class="name h5 text-left text-muted">
+            <p class="name h5 text-left my-3  ">
               {{ collection.name }}
             </p>
           </span>

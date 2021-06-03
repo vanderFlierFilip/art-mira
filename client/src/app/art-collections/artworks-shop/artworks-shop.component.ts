@@ -11,14 +11,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ArtworksShopComponent implements OnInit {
   artworks: IArtwork[];
+
   constructor(private artCollectionService: ArtCollectionsService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.loadArtworks();
-    
   }
   loadArtworks() {
-    this.artCollectionService.getArtworks(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(response => {
+    this.artCollectionService.getArtworksFromCollection(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(response => {
       this.artworks = response.artworks;
     }, error => {
       console.log('ERROR: ', error);

@@ -13,6 +13,7 @@ export class ArtCollectionsComponent implements OnInit {
 
   ngOnInit(){
     this.artCollectionService.getArtCollections().subscribe(response => {
+      console.log(response);
       this.artCollections = response;
     }, error => console.log(error));
   }

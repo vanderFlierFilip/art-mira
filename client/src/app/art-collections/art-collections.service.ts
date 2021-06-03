@@ -13,7 +13,10 @@ export class ArtCollectionsService {
   getArtCollections() {
     return this.http.get<IArtCollection[]>(this.baseUrl + 'artcollections');
   }
-  getArtworks(id: number) {
+  getArtCollectionsById(id: number) {
+    return this.http.get<IArtCollection>(this.baseUrl + 'artcollections/' + id);
+  }
+  getArtworksFromCollection(id: number) {
     return this.http.get<IArtCollection>(this.baseUrl + 'artcollections/' + id);
   }
   getArtwork(id: number) {
