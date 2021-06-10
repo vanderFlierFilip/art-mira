@@ -77,9 +77,7 @@
           },
           "configurations": {
             "production": {
-              "sslKey": "./ssl/server.key",
-              "sslCert": "./ssl/server.crt",
-              "ssl": true,
+             
               "browserTarget": "client:build:production"
             }
           }
@@ -123,7 +121,7 @@
           }
         },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@aERR_CERT_AUTHORITY_INVALIDngular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "client:serve"
