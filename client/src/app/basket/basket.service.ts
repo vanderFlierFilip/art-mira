@@ -104,5 +104,10 @@ export class BasketService {
           localStorage.removeItem('basket_id');
         }, error => console.log(error));
     }
+  deleteLocalBasket(id: string) {
+    this.basketSource.next(null);
+    this.basketTotalSource.next(null);
+    localStorage.removeItem('basket_id');
+  }
 
 }
